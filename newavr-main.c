@@ -17,12 +17,13 @@ int main(void) {
     PIN_OUTPUT(2,portA);
     PIN_OUTPUT(2,portC);
     PIN_OUTPUT(7,portC);
+    PIN_OUTPUT(LED,portD);
     
     PIN_INPUT(BUTTON,portB);
     PIN_INPUT(4,portB);
     PIN_INPUT(2,portD);
     
-    PIN_OUTPUT(LED,portD);
+    
     while (1) {
         if (isPressedB(BUTTON)) { 
             setPIN(3, portA);
